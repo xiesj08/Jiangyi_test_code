@@ -37,7 +37,7 @@ def test_create_post(base_url):
     assert response.json().get("title") == "foo"
 
 
-
+# pytest 传参 "post_id"=[1, 2, 3, 4]
 @pytest.mark.parametrize("post_id", [1, 2, 3, 4])
 def test_get_post_by_id(base_url, post_id):
     url = f'{base_url}/{post_id}'
