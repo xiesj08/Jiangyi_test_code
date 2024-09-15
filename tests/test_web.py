@@ -30,6 +30,7 @@ def test_get_url(driver, base_url):
     driver.get(base_url)
     locator = (By.ID, "kw")
     try:
+        #隐式等待10秒, 当出现locator = (By.ID, "kw") 输入框 执行下一行代码
         ele = WebDriverWait(driver, 10).until(EC.presence_of_element_located(locator))
         driver.find_element(By.ID, "kw").send_keys('selenium')
         time.sleep(1)
