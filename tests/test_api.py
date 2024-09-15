@@ -6,6 +6,7 @@ import requests
 https://jsonplaceholder.typicode.com/
 
 '''
+# pytest 初始化base_url网址
 @pytest.fixture
 def base_url():
     return 'https://jsonplaceholder.typicode.com/posts'
