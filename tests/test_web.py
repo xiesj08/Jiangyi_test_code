@@ -19,7 +19,7 @@ https://jsonplaceholder.typicode.com/
 def base_url():
     return 'https://www.baidu.com'
 
-# pytest 初始化webdriver网址
+# pytest 初始化webdriver
 @pytest.fixture
 def driver():
     return webdriver.Chrome()
